@@ -1,0 +1,65 @@
+/* Temas */
+
+.bg-dark{
+    background-color: #232946;
+    color: #b8c1ec;
+}
+
+.bg-dark h1, h2, h3 {
+    color: #fffffe;
+}
+
+.bg-light{
+    background-color: #d4d8f0;
+    color: #232946;
+}
+
+/* Tamaño de letra */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.3rem;
+}
+
+/* Colores de fondo y texto de Botones*/
+
+.btn-white {
+    background-color: #fffffe;
+    color: #232946;
+}
+
+.btn-dark-01 {
+    background-color: #232946;
+    color: #b8c1ec;
+}
+
+.btn-dark-02 {
+    background-color: #232946;
+    color: #fffffe;
+}
+
+.btn-ash {
+    background-color: #e2daeb;
+    color: #1f1135;
+}
+
+.btn-pink {
+    background-color: #eebbc3;
+    color: #232946;
+}
+
+.btn-purple{
+    background-color: #232946;
+    color: #eebbc3;
+}
+
+/* Botones */
+
