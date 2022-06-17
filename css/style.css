@@ -1,5 +1,24 @@
 /* Temas */
 
+@font-face {
+    font-family: "AleoLight";
+    src:local("Aleo"), url('../assets/fonts/Aleo-Light.woff');
+}
+
+@font-face {
+    font-family: "AleoBold";
+    src:local("Aleo"), url('../assets/fonts/Aleo-Bold.woff');
+}
+
+@font-face {
+    font-family: "AleoRegular";
+    src:local("Aleo"), url('../assets/fonts/Aleo-Regular.woff');
+}
+
+body{
+    font-family: 'AleoLight', sans-serif;
+}
+
 .bg-dark{
     background-color: #232946;
     color: #b8c1ec;
@@ -18,15 +37,36 @@
 
 h1 {
     font-size: 3rem;
+    font-family: "AleoBold";
+    color: inherit;
 }
 
 h2 {
     font-size: 2rem;
+    font-family: "AleoBold";
+    color: inherit;
 }
 
 p {
     font-size: 1.05rem;
     line-height: 1.3rem;
+    color: inherit;
+}
+
+header,main,footer {
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+}
+
+article{
+    margin-bottom: 0.5rem;
+}
+
+a:visited{
+    color: currentColor;
 }
 
 /* Colores de fondo y texto de Botones*/
@@ -36,19 +76,19 @@ p {
     color: #232946;
 }
 
-.btn-dark-01 {
-    background-color: #232946;
-    color: #b8c1ec;
-}
-
-.btn-dark-02 {
+.btn-dark {
     background-color: #232946;
     color: #fffffe;
 }
 
-.btn-ash {
-    background-color: #e2daeb;
-    color: #1f1135;
+.btn-dark-purple {
+    background-color: #232946;
+    color: #b8c1ec;
+}
+
+.btn-dark-pink{
+    background-color: #232946;
+    color: #eebbc3;
 }
 
 .btn-pink {
@@ -57,9 +97,126 @@ p {
 }
 
 .btn-purple{
-    background-color: #232946;
-    color: #eebbc3;
+    background-color: #b8c1ec;
+    color: #232946;
 }
 
 /* Botones */
 
+.box {
+    width:fit-content;
+    display: inline-block;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.box a {
+    text-decoration: none;
+    display: inherit;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: "AleoBold";
+}
+
+.border-solid{
+    border: 1px solid #121629;
+}
+
+/*  Bordes Radius   */
+
+.border-radius-05{
+    border-radius: .5em;
+}
+
+.border-radius-1{
+    border-radius: 1.5em;
+}
+
+.border-br-tl-05{
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+
+.border-br-tr-tl-05{
+    border-bottom-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+/* Bordes */
+
+.border-dash{
+    border: 2px dashed #121629;
+}
+
+.border-outline{
+    border: 2px solid #121629;
+    outline: #b8c1ec solid 4px;
+    outline-offset: -8px;
+}
+
+.border-mix {
+    border-color: #121629 #616da8;
+    border-right-style: dotted;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-left-style: dotted;
+}
+
+/* Sombra */
+
+.dark-shadow-inset {
+    box-shadow:inset 0 0 15px 5px rgb(97 109 168 / 0.5);
+}
+
+.dark-shadow {
+    box-shadow: 0 0 15px 3px rgb(149 163 229 / 0.5);
+}
+
+.dark-multiple-shadow {
+    box-shadow:
+    0 0 6px 3px rgb(149 163 229 / 0.5),
+    0 0 10px 2px rgb(255 255 255 / 0.9),
+    0 0 8px 5px rgb(238 187 195 / 0.5);
+}
+
+/* Hover & Opacity */
+
+.change-bgc:hover {
+    background-color: #fffffe;
+    color: #232946;
+}
+
+.change-fonts:hover{
+    font-size: 1.2rem;
+}
+
+.change-opacity:hover{
+    opacity: 0.9;
+}
+
+/* Transitions */
+
+.change-shadow1:hover {
+    box-shadow:inset 0 0 15px 5px rgb(255 255 255 / 0.8);
+    color:#fffffe;
+}
+
+.change-shadow2:hover {
+    box-shadow: 0 0 15px 3px rgb(238 187 195 / 0.8);
+    color:#eebbc3;
+}
+
+.change-shadow3:hover {
+    box-shadow:
+    0 0 10px 2px rgb(255 255 255 / 0.9),
+    0 0 6px 5px rgb(149 163 229 / 0.5),
+    0 0 15px 8px rgb(238 187 195 / 0.8);
+    color: #616da8;
+}
+
+.trans {
+    transition: 2s;
+}

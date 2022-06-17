@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nemo" />
     <meta name="description" content="Botones con CSS" />
-    <title>BotonesCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>BotonesCSS</title>
   </head>
   <body class="bg-dark">
     <header>
@@ -22,24 +28,62 @@
     </header>
     <main class="bg-light">
       <article>
-        <h2></h2>
-        <div></div>
+        <h2>Clásicos</h2>
+        <div>
+          <div class="box btn-dark"><a href="#">UNETE</a></div>
+          <div class="box border-solid bg-light"><a href="#">Tweet</a></div>
+          <div class="box btn-dark-pink"><a href="#">SUSCRIBETE</a></div>
+        </div>
       </article>
       <article>
-        <h2></h2>
-        <div></div>
+        <h2>Redondeados</h2>
+        <div>
+          <div class="box btn-pink border-radius-05"><a href="#">Pink</a></div>
+          <div class="box bg-white border-solid border-radius-1"><a href="#">WHITE</a></div>
+          <div class="box btn-purple border-br-tl-05"><a href="#">Purple</a></div>
+          <div class="box btn-dark border-br-tr-tl-05"><a href="#">Dark</a></div>
+        </div>
       </article>
       <article>
-        <h2></h2>
-        <div></div>
+        <h2>Bordes</h2>
+        <div>
+          <div class="box border-solid "><a href="#">Hello</a></div>
+          <div class="box border-dash border-radius-1"><a href="#">Hello</a></div>
+          <div class="box border-outline "><a href="#">Hello</a></div>
+          <div class="box border-mix border-br-tr-tl-05"><a href="#">Hello</a></div>
+        </div>
       </article>
       <article>
-        <h2></h2>
-        <div></div>
+        <h2>Sombra</h2>
+        <div>
+          <div class="box border-br-tl-05 btn-dark-purple dark-shadow"><a href="#">Me</a></div>
+          <div class="box border-radius-1 btn-white dark-multiple-shadow"><a href="#">Soul</a></div>
+          <div class="box border-br-tr-tl-05 btn-purple dark-shadow-inset"><a href="#">Ghost</a></div>
+        </div>
       </article>
       <article>
-        <h2></h2>
-        <div></div>
+        <h2>Hover & Opacity</h2>
+        <div>
+          <div class="box btn-dark-purple border-radius-05 change-opacity"><a href="#">Cat</a></div>
+          <div class="box btn-dark border-radius-1 change-fonts"><a href="#">Fish</a></div>
+          <div class="box btn-dark-pink border-radius-05 dark-multiple-shadow change-bgc"><a href="#">Dog</a></div>
+        </div>
+      </article>
+      <article>
+        <h2>Transiciones</h2>
+        <div>
+          <div class="box btn-pink border-radius-1 change-opacity change-fonts trans"><a href="#">Cat</a></div>
+          <div class="box btn-white border-radius-1 change-fonts trans"><a href="#">Soul</a></div>
+          <div class="box btn-dark border-radius-1 change-fonts trans"><a href="#">Fish</a></div>
+          <br>
+          <div class="box btn-dark border-radius-1 change-bgc trans"><a href="#">Fish</a></div>
+          <div class="box btn-purple border-radius-1 change-bgc trans"><a href="#">Soul</a></div>
+          <div class="box btn-pink border-radius-1 change-opacity change-bgc trans"><a href="#">Cat</a></div>
+          <br>
+          <div class="box border-radius-1 btn-pink dark-shadow-inset change-shadow1 trans"><a href="#">Cat</a></div>
+          <div class="box border-radius-1 btn-white dark-multiple-shadow change-shadow3 trans"><a href="#">Soul</a></div>
+          <div class="box border-radius-1 btn-dark-purple dark-shadow change-shadow2 trans"><a href="#">Fish</a></div>
+        </div>
       </article>
     </main>
     <footer>
